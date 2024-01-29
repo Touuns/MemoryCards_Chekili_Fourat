@@ -1,0 +1,268 @@
+body{
+    background-image: url(../assets/background1.jpeg);
+    font-family: 'comic Sans ms';
+    background-size: cover ;
+}
+
+.backend{
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 250px;
+    
+}
+
+.btnSound{
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    cursor:pointer;
+}
+
+.sound, .exit {
+    padding : 50px;
+}
+
+
+
+.btnExit{
+    height: 40px;
+    width: 40px;
+    background-color: none;
+    border-radius: 20%;
+    cursor:pointer;
+    display: none;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    /* width: 10px; */
+    background-color: rgba(90, 121, 200, 0.356);
+   /* opacity: 0.4; */
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    height:100%;
+    background-color: rgba(90, 121, 200, 0.356);
+    display: none;
+}
+
+.barre {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid black;
+    border-right: 50%;
+    padding-top: 40px
+
+}
+
+.pseudoGame {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    margin-right: 200px;
+}
+
+.timer{
+    font-size: 25px;
+}
+
+
+.partieRestante{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    margin-left: 200px;
+    gap: 10px;
+}
+
+.tabScore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px
+}
+
+.titreScore{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    border-bottom: 5px solid white;
+    border-radius: 40%;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: larger;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+
+.resultatScore{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    border: 5px double white;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: larger;
+}
+
+#newPartie{
+    border-bottom: 5px solid white;
+        /* border-radius: 40%; */
+
+}
+
+.prepaPartie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin-top: 10px;
+    border-radius: 1.8em;
+    overflow: none;
+    width: 50%;
+    font-family: 'Courier New' ;
+    flex: 1;
+}
+
+.choixNbrCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.start {
+    margin-top: 20px;
+}
+
+.choixNbrCards button{
+    height: 60px;
+    width: 50px;
+    border-radius: 10px;
+    cursor:pointer;
+    display: inline-block;
+    border: 4px double black;
+    transition: all 0.5s;
+    
+}
+
+.btnReset{
+    height: 60px;
+    width: 50px;
+    border-radius: 10px;
+    cursor:pointer;
+    display: inline-block;
+    border: 4px double black;
+    transition: all 0.5s;
+}
+
+.Lee{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red;     */
+    gap : 10px;
+    font-family: 'comic sans ms';
+
+}
+
+.mesCartes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.premierLigne{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.deuxiemeLigne{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.maCarte{
+    height: 300px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+
+/* .carteOne img{
+max-width: 100%;
+height: auto;
+
+} */
+
+
+
+.flip {
+    transform: rotateY(180deg)
+}
+
+.deuxiemeLigne{
+    display: flex;
+    flex-direction: row;
+}
+
+.selectOne:hover, .selectTwo:hover, .selectThree:hover, .selectFour:hover{
+    background-color: rgb(145, 208, 208);
+}
+
+.start, .reset{
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 28px;
+    border: 4px double rgb(232, 142, 142);
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    /* align-items: left; */
+    width: 50%;
+    margin-top: 150px;
+
+
+}
+.start:hover, .reset:hover{
+    background-color: rgb(232, 142, 142) ;
+    transition: all 0.5s;
+}
